@@ -2,10 +2,9 @@ import "../scss/app.scss";
 
 window.addEventListener("DOMContentLoaded", () => {
   // This block will be executed once the page is loaded and ready
-
-    const products = Array.from(document.querySelectorAll(".product"));
-    const product = document.querySelector(".price");
-    products.forEach(x => {
-      x.setAttribute('data-price', price.textContent);
-    })
+  const products = document.querySelector('.product');
+  console.log(products)
+     const priceSpan = products.querySelector('.price');
+     const price = priceSpan.textContent;
+     products.setAttribute('data-price', price);
 });
